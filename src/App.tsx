@@ -6,7 +6,7 @@ function App() {
   return (
       <div className='w-full h-screen '>
             <div className='text-9xl text-center text-slate-700 uppercase   m-auto inset-0'>
-       Marco shop
+       Marco  dshop
     </div>
       </div>
   )
