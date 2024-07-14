@@ -1,7 +1,7 @@
 
 function Home() {
   return (
-    <div className="w-full h-screen bg-gray-2 text-center text-red1">
+    <div className="w-full h-screen text-center text-red1 poppins-5">
       Home page
     </div>
   )
