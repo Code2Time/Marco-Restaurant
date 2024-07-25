@@ -1,6 +1,6 @@
 // import { useState } from "react";
 
-import Container from "../components/Container";
+import Header from "../components/Header";
 import Navbar from "../components/Navbar";
 
 function Home() {
@@ -20,10 +20,10 @@ function Home() {
   //! window.addEventListener("scroll", Changestyle);
 
   return (
-    <div className="w-full h-auto  text-center mt-52 poppins-5">
-      <Navbar />
+    <>
+     <Header />
 
-    </div>
+    </>
   );
 }
 

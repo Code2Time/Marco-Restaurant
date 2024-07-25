@@ -6,7 +6,7 @@ interface Icontainer {
 
 function Container({children}:Icontainer) {
   return (
-    <div className="w-11/12 max-w[1000px] mx-auto h-auto">
+    <div className="w-10/12 max-w[900px] mx-auto h-auto">
       {children}
     </div>
   )

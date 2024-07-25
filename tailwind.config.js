@@ -10,13 +10,14 @@ export default {
         "gray1" : "#373737",
         "gray-2" : "#2e3036",
         "gray3" : "#f9f9ff",
-        "red1" : "#f42f2c"
+        "red1" : "#f42f2c",
+        "my-white" : "#fbfbfb"
       },
       backgroundColor :{
-        "bg-gray1" : "#373737",
-        "bg-gray-2" : "#2e3036",
-        "bg-gray3" : "#f9f9ff",
-        "bg-red1" : "#f42f2c"
+        "gray1" : "#373737",
+        "gray-2" : "#2e3036",
+        "gray3" : "#f9f9ff",
+        "red1" : "#f42f2c"
 
       },
       screens :{

@@ -48,3 +48,27 @@
     font-weight: 700;
     font-style: normal;
   }
+body{
+    background-color: rgba(87, 76, 76, 0.361) !important;
+    
+
+
+    #nav{
+        .navlink{
+            transition: all 0.3s;
+            text-transform: uppercase;
+            font-size: 12px;
+            font-weight: 550;
+        }
+    }
+
+    .header-container{
+        background: url('../assets/image/header.jpg');
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+    }
+
+
+   
+}
