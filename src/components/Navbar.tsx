@@ -55,34 +55,34 @@ function Navbar() {
                     <div className="hidden sm:ml-6 sm:block">
                       <div id="nav" className="flex space-x-4 justify-center items-center text-my-white  ">
                       <NavLink
-                          to="/"
+                          to="/gallery"
                           className="navlink px-3 py-2 text-sm     hover:text-red1 "
                         >
-                          <h1>Gallery</h1>
+                          Gallery
                         </NavLink>
                       <NavLink
-                          to="/"
+                          to="/contact"
                           className="navlink px-3 py-2 text-sm   hover:text-red1 "
                         >
-                          <h1>Contact</h1>
+                          Contact
                         </NavLink>
                         <NavLink
-                          to="/"
+                          to="/menu"
                           className="navlink px-3 py-2 text-sm   hover:text-red1"
                         >
-                          <h1>Menu</h1>
+                          Menu
                         </NavLink>
                         <NavLink
-                          to="/"
+                          to="/about"
                           className="navlink px-3 py-2 text-sm    hover:text-red1"
                         >
-                          <h1>About</h1>
+                          About
                         </NavLink>
                         <NavLink
                           to="/"
                           className="navlink px-3 py-2 text-sm font-medium   hover:text-red1 "
                         >
-                          <h1>Home</h1>
+                          Home
                         </NavLink>
                       </div>
                     </div>
