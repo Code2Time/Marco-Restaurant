@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import hamburger from "../assets/image/about.webp";
 function AboutOurStory() {
   return (
-    <div className="grid grid-cols-12 gap-4 p-10">
+    <div className="grid grid-cols-12 gap-4 p-10 mt-2 sm:mt-10">
       <div className="About-our-story my-40 flex flex-col justify-center items-start col-span-12 md:col-span-6">
         <h1 className="poppins-7 text-2xl text-left text-black-0">
           AboutOurStory section
@@ -21,7 +21,7 @@ function AboutOurStory() {
           view full menu
         </Link>
       </div>
-      <div className="col-span-12 md:col-span-6 p-16 overflow-hidden ">
+      <div className="col-span-12 md:col-span-6 flex justify-center items-center md:p-8 lg:p-16 ">
         <img
           src={hamburger}
           alt="hamburger"
