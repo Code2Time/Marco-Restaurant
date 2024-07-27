@@ -51,8 +51,7 @@
 
 
 body{
-    background-color: rgba(87, 76, 76, 0.361) !important;
-    
+
 
 
     #nav{
@@ -74,6 +73,14 @@ body{
 
     .active{
       border-bottom: 1px solid #eeeeee;
+    }
+   
+    .btn{
+      transition: all 0.3s;
+    
+    }
+    .btn:hover{
+      box-shadow: 0 10px 20px rgba(255, 0, 0, 0.407);
     }
 
    

@@ -11,7 +11,8 @@ export default {
         "gray-2" : "#2e3036",
         "gray3" : "#f9f9ff",
         "red1" : "#f42f2c",
-        "my-white" : "#fbfbfb"
+        "my-white" : "#fbfbfb",
+        "black-0" : "#222222"
       },
       backgroundColor :{
         "gray-0" : "rgba(34, 34, 34, 0.9)",
