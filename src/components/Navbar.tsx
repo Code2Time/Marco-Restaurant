@@ -1,15 +1,28 @@
-
-// !
-import { Fragment } from "react";
+import { Fragment, useState } from "react";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { NavLink } from "react-router-dom";
 
 
 function Navbar() {
+
+  // change style when scrolling
+
+  const [style, setStyle] = useState<boolean>(false);
+
+  const Changestyle = (): void => {
+   if (window.scrollY >= 45) {
+     setStyle(true);
+  
+   } else {
+     setStyle(false);
+   }
+ }; 
+ window.addEventListener("scroll", Changestyle);
+
   return (
-    <div className="navbar-container w-full h-auto mt-28">
-      <div className="nav w-9/12  border-t-[1px] border-b-[1px] mx-auto   ">
+    <div id="nav" className={style ? ("sticky top-0 w-full h-auto  bg-gray-0  ") : ("navbar-container w-full h-auto mt-28")}>
+      <div className={style ? ("border-none") : ("nav w-9/12  border-t-[1px] border-b-[1px] mx-auto   ")}>
         <Disclosure
           dir="rtl"
           id="nav-container"

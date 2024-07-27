@@ -48,12 +48,15 @@
     font-weight: 700;
     font-style: normal;
   }
+
+
 body{
     background-color: rgba(87, 76, 76, 0.361) !important;
     
 
 
     #nav{
+      transition: all 0.3s;
         .navlink{
             transition: all 0.3s;
             text-transform: uppercase;

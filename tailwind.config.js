@@ -14,6 +14,7 @@ export default {
         "my-white" : "#fbfbfb"
       },
       backgroundColor :{
+        "gray-0" : "rgba(34, 34, 34, 0.9)",
         "gray1" : "#373737",
         "gray-2" : "#2e3036",
         "gray3" : "#f9f9ff",
