@@ -84,7 +84,13 @@ body{
     }
 
     .menu-btn{
-     
+      transition: all 0.4s;
+
+    }
+    .menu-btn:focus{
+      outline: none;
+      background-color: rgb(255, 0, 0);
+      color: white;
     }
 
    
