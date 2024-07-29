@@ -1,25 +1,49 @@
-// import React, { useState } from "react";
-// import { MenuData } from "../data/MenuData";
-import Categories from './Categories'
+import { useState } from "react";
+import { MenuData } from "../data/MenuData";
+import Categories from "./Categories";
+import MenuItem from "./MenuItem";
+import { ImenuItems } from "../types/Types";
 
 
+const Allcategories = ["all" , ...new Set(MenuData.map((item)=> item.category))]
 
 function Menu() {
-  //   const all = ["all" , ...new Set(MenuData.map((item) => item.category))]
-  // const [categories , setCategories] = useState<any>(all)
-  // console.log(categories)
+
+  const [menuItems , setMenuItems]= useState<ImenuItems[]>(MenuData)
+
+const [categories , setCategories] = useState<typeof Allcategories>(Allcategories)
+
+
+const filterItems = (category : string)=>{
+
+  if(category == "all"){
+     setMenuItems(MenuData)
+  }else{
+    const NewItems = MenuData.filter((item)=>item.category == category)
+    setMenuItems(NewItems)
+  }
+
+
+}
 
   return (
     <>
       <main>
-        <section> 
+        <section>
           <div className="className='Menu-container w-full h-auto  bg-gray-3 text-center ">
-            <h1 className="poppins-6 p-4 sm:text-2xl md:text-4xl my-2">What kind of Foods we serve for you</h1>
-            <p className="text-sm sm:text-base mt-8">Who are in extremely love with eco friendly system.</p>
-          <Categories />
-          <div className='w-full h-12'>
-
-          </div>
+            <h1 className="poppins-6 p-4 sm:text-2xl md:text-4xl my-2">
+              What kind of Foods we serve for you
+            </h1>
+            <p className="text-sm sm:text-base mt-8">
+              Who are in extremely love with eco friendly system.
+            </p>
+            <div className="w-full h-auto flex justify-center items-center gap-10 mt-32">
+             <Categories filterItems={filterItems} categories={categories}   />
+          
+            </div>
+            <div className=" h-auto grid grid-cols-12 gap-10 w-10/12 mx-auto mt-32">
+              <MenuItem  menuItems={menuItems} />
+            </div>
           </div>
         </section>
       </main>
