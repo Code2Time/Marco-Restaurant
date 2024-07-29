@@ -85,12 +85,22 @@ body{
 
     .menu-btn{
       transition: all 0.4s;
+      background-color: transparent;
+   
+
+    }
+ 
+    .menu-btn:hover{
+      background-color: #f42f2c;
+      color: white;
+      border-radius: 3px;
 
     }
     .menu-btn:focus{
       outline: none;
       background-color: rgb(255, 0, 0);
       color: white;
+      transform: translateY(-7px);
     }
 
    

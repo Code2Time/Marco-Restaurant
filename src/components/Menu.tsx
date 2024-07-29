@@ -31,17 +31,17 @@ const filterItems = (category : string)=>{
       <main>
         <section>
           <div className="className='Menu-container w-full h-auto  bg-gray-3 text-center ">
-            <h1 className="poppins-6 p-4 sm:text-2xl md:text-4xl my-2">
+            <h1 className="poppins-6 p-4 sm:text-2xl md:text-4xl my-5">
               What kind of Foods we serve for you
             </h1>
             <p className="text-sm sm:text-base mt-8">
               Who are in extremely love with eco friendly system.
             </p>
-            <div className="w-full h-auto flex justify-center items-center gap-10 mt-32">
+            <div className="w-full h-auto flex flex-col sm:flex-row justify-center items-center  mt-10 sm:p-5">
              <Categories filterItems={filterItems} categories={categories}   />
           
             </div>
-            <div className=" h-auto grid grid-cols-12 gap-10 w-10/12 mx-auto mt-32">
+            <div className=" h-auto grid grid-cols-12 gap-4 w-10/12 mx-auto mt-10 sm:mt-14 ">
               <MenuItem  menuItems={menuItems} />
             </div>
           </div>

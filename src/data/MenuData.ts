@@ -29,7 +29,7 @@ export const MenuData = [
         id : 3,
         title : "Macchiato",
         description : "Usage of the Internet is becoming more common due to rapid advance.",
-        category : "Budget Meal",
+        category : "Meal",
         price : "70",
         img : Macchiato
 
