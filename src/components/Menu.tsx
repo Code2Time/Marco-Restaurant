@@ -1,30 +1,36 @@
-import { useState } from "react";
 import { MenuData } from "../data/MenuData";
+import { ImenuItems } from "../types/Types";
 import Categories from "./Categories";
 import MenuItem from "./MenuItem";
-import { ImenuItems } from "../types/Types";
+import { useState } from "react";
 
-
-const Allcategories = ["all" , ...new Set(MenuData.map((item)=> item.category))]
+// a constant for save all categories
+const Allcategories = [
+  "all",
+  ...new Set(MenuData.map((item) => item.category)),
+];
 
 function Menu() {
+  // All of Items Data
+  const [menuItems, setMenuItems] = useState<ImenuItems[]>(MenuData);
 
-  const [menuItems , setMenuItems]= useState<ImenuItems[]>(MenuData)
+  //save categories for button categories
+  const [categories, setCategories] =
+    useState<typeof Allcategories>(Allcategories);
 
-const [categories , setCategories] = useState<typeof Allcategories>(Allcategories)
+  // set activecategory for menu style
+  const [activecategory, setActiveCategory] = useState<string>("all");
 
-
-const filterItems = (category : string)=>{
-
-  if(category == "all"){
-     setMenuItems(MenuData)
-  }else{
-    const NewItems = MenuData.filter((item)=>item.category == category)
-    setMenuItems(NewItems)
-  }
-
-
-}
+  // function for handle Menu
+  const filterItems = (category: string) => {
+    if (category == "all") {
+      setMenuItems(MenuData);
+    } else {
+      const NewItems = MenuData.filter((item) => item.category == category);
+      setMenuItems(NewItems);
+    }
+    setActiveCategory(category);
+  };
 
   return (
     <>
@@ -38,11 +44,14 @@ const filterItems = (category : string)=>{
               Who are in extremely love with eco friendly system.
             </p>
             <div className="w-full h-auto flex flex-col sm:flex-row justify-center items-center  mt-10 sm:p-5">
-             <Categories filterItems={filterItems} categories={categories}   />
-          
+              <Categories
+                filterItems={filterItems}
+                categories={categories}
+                activecategory={activecategory}
+              />
             </div>
             <div className=" h-auto grid grid-cols-12 gap-4 w-10/12 mx-auto mt-10 sm:mt-14 ">
-              <MenuItem  menuItems={menuItems} />
+              <MenuItem menuItems={menuItems} />
             </div>
           </div>
         </section>

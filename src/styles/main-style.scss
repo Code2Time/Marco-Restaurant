@@ -96,11 +96,14 @@ body{
       border-radius: 3px;
 
     }
-    .menu-btn:focus{
+    .active-btn{
       outline: none;
       background-color: rgb(255, 0, 0);
       color: white;
       transform: translateY(-7px);
+    }
+    .menu-item{
+      transition: all 0.4s;
     }
 
    
