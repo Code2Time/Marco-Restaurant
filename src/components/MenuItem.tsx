@@ -7,7 +7,7 @@ function MenuItem({ menuItems }: CategoriesProps) {
     <>
       {menuItems.map((item) => (
         <Link
-          to="/a"
+          to={`/order/${item.id}`}
           key={item.id}
           className="menu-item-container bg-white flex justify-center items-center col-span-12 md:col-span-6 lg:col-span-4 gap-5 px-5 py-10 "
         >
@@ -33,7 +33,7 @@ function MenuItem({ menuItems }: CategoriesProps) {
                 to="/"
                 className="flex justify-center items-center gap-1 text-black mt-6 capitalize menu-item hover:text-red1 "
               >
-                <span>click heare</span>
+                <span>click heare </span>
                 <TbHandClick />
               </Link>
             </div>

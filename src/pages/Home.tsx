@@ -2,6 +2,7 @@ import AboutOurStory from "../components/AboutOurStory";
 import Container from "../components/Container";
 import Header from "../components/Header";
 import Menu from "../components/Menu";
+import Reserve from "../components/Reserve";
 
 function Home() {
   return (
@@ -11,6 +12,7 @@ function Home() {
         <AboutOurStory />
       </Container>
       <Menu />
+      <Reserve />
     </>
   );
 }
