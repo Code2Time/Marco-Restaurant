@@ -119,5 +119,24 @@ body{
          }
     }
 
+    .reserve-form-container{
+      form{
+        input{
+        text-align: left;
+        text-transform: capitalize;
+        font-family: 'poppins';
+        font-weight: 200;
+        font-size: 14px;
+        padding: 5px 10px;
+        }
+        input:focus{
+          outline: none;
+          border: 0.5px solid red;
+      
+        }
+        
+      }
+    }
+
    
 }
