@@ -36,7 +36,7 @@ function Menu() {
     <>
       <main>
         <section>
-          <div className="className='Menu-container w-full h-auto  bg-gray-3 text-center ">
+          <div className="className='Menu-container w-full h-auto  bg-gray-3 text-center pb-10 sm:pb-20 ">
             <h1 className="poppins-6 p-4 sm:text-2xl md:text-4xl my-5">
               What kind of Foods we serve for you
             </h1>

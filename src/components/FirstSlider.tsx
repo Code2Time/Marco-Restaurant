@@ -1,12 +1,8 @@
-import Carousel from "react-multi-carousel";
-import "react-multi-carousel/lib/styles.css";
 import test1 from "../assets/Menu/American Pancakes.jpg";
-import test2 from "../assets/Menu/Bacon.jpg";
-import test3 from "../assets/Menu/Cappuccione.jpg";
-import test4 from "../assets/Menu/Granola.jpg";
-import bgSlider from "../assets/image/slider-bg.jpg";
-import { FaStar } from "react-icons/fa";
 import { FaRegStarHalfStroke } from "react-icons/fa6";
+import "react-multi-carousel/lib/styles.css";
+import Carousel from "react-multi-carousel";
+import { FaStar } from "react-icons/fa";
 
 function FirstSlider() {
   const responsive = {
