@@ -9,7 +9,6 @@ function Categories({
   filterItems,
   activecategory,
 }: TcategoriesProps) {
-  console.log(activecategory);
   return (
     <>
       {categories.map((category, index) => (

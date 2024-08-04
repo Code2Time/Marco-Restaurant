@@ -10,6 +10,13 @@ export interface ImenuItems {
 }
 
 
-export type CategoriesProps ={
+export type CategoriesProps = {
   menuItems : ImenuItems[]
+}
+
+export interface Iusers {
+  id : number
+  img : string 
+  info : string
+  name : string
 }
