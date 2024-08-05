@@ -4,6 +4,7 @@ import Container from "../components/Container";
 import Reserve from "../components/Reserve";
 import Header from "../components/Header";
 import Menu from "../components/Menu";
+import Blog from "../components/Blog";
 
 
 function Home() {
@@ -17,7 +18,7 @@ function Home() {
       <Menu />
       <Reserve />
       <FirstSlider />
-    
+      <Blog />
     </>
   );
 }

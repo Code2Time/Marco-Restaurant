@@ -20,3 +20,11 @@ export interface Iusers {
   info : string
   name : string
 }
+
+export interface Iblogs {
+  id : number
+  title : string
+  desc : string
+  date : string
+  img : string
+}

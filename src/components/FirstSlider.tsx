@@ -31,7 +31,7 @@ function FirstSlider() {
       <Carousel responsive={responsive} className="w-full h-full  ">
        {
         UserData.map((item)=>(
-            <UserItem {...item} />
+            <UserItem key={item.id} {...item} />
         ))
        }
       </Carousel>
