@@ -1,4 +1,7 @@
-import { FaArrowRight } from "react-icons/fa6";
+import { AiFillInstagram } from "react-icons/ai";
+import { CiHeart } from "react-icons/ci";
+import { FaTelegramPlane } from "react-icons/fa";
+import { FaArrowRight, FaFacebookF, FaTwitter } from "react-icons/fa6";
 
 function Footer() {
   return (
@@ -40,8 +43,17 @@ function Footer() {
                 </div>
             </div>
         </div>
-        <div className="item2 w-full h-11 bg-gray-4">
+        <div className="item2 w-full h-auto bg-gray-4 flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-10 p-3">
+          <div className="copy-right ">
+            <p className="flex items-center gap-1 poppins-5 text-xs">Copyright ©2024 | This template is made with <span ><CiHeart color="red" className="cursor-pointer" /></span>  by <span className="text-red1 cursor-pointer">Amir</span></p>
 
+          </div>
+          <div className="footer-icons flex gap-1">
+          <FaFacebookF  className="footer-icon size-8 p-2 text-white hover:bg-red1 hover:border-none cursor-pointer "/>
+          <FaTwitter className="footer-icon size-8 p-2 text-white hover:bg-red1 hover:border-none cursor-pointer " />
+          <AiFillInstagram className="footer-icon size-8 p-2 text-white hover:bg-red1 hover:border-none cursor-pointer " />
+          <FaTelegramPlane className="footer-icon size-8 p-2 text-white hover:bg-red1 hover:border-none cursor-pointer " />
+          </div>
         </div>
       </div>
     </>
