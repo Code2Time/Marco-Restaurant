@@ -4,19 +4,20 @@ export default {
   theme: {
     extend: {
       colors: {
-        gray1: "#373737",
+        "gray1": "#373737",
         "gray-2": "#2e3036",
-        gray3: "#f9f9ff",
-        red1: "#f42f2c",
+        "gray3": "#f9f9ff",
+        "red1": "#f42f2c",
         "my-white": "#fbfbfb",
         "black-0": "#222222",
       },
       backgroundColor: {
         "gray-0": "rgba(34, 34, 34, 0.9)",
-        gray1: "#373737",
+        "gray1": "#373737",
         "gray-2": "#2e3036",
         "gray-3": "#e6e6eb",
-        red1: "#f42f2c",
+        "red1": "#f42f2c",
+        "gray-4" : "#222222"
       },
       screens: {
         screens: {
