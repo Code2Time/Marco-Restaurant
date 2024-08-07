@@ -8,10 +8,11 @@ function Reserve() {
           </h1>
           <p className="sm:w-[90%] md:w-[70%] text-gray-400 my-10 text-justify p-5">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor <span className="hidden md:block">
-            incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam. Quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea.
+            eiusmod tempor{" "}
+            <span className="hidden md:block">
+              incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+              veniam. Quis nostrud exercitation ullamco laboris nisi ut aliquip
+              ex ea.
             </span>
           </p>
         </div>
@@ -46,12 +47,7 @@ function Reserve() {
                   />
                 </div>
                 <div className="w-full h-auto py-2 px-6">
-                  <input
-                    required
-                    type="date"
-                    
-                    className="w-full h-full"
-                  />
+                  <input required type="date" className="w-full h-full" />
                 </div>
                 <div className="w-full h-auto py-2 px-6">
                   <button className="py-2 px-3 bg-red1 outline-none  poppins-5 transition-all btn text-my-white rounded-sm mt-5">

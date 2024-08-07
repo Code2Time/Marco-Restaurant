@@ -1,8 +1,5 @@
-import test1 from "../assets/Menu/American Pancakes.jpg";
-import { FaRegStarHalfStroke } from "react-icons/fa6";
 import "react-multi-carousel/lib/styles.css";
 import Carousel from "react-multi-carousel";
-import { FaStar } from "react-icons/fa";
 import { UserData } from "../data/UserData";
 import UserItem from "./UserItem";
 
@@ -29,11 +26,9 @@ function FirstSlider() {
   return (
     <div className="w-full h-[300px] sm:h-[400px] md:h-[600px] my-6 slider-container">
       <Carousel responsive={responsive} className="w-full h-full  ">
-       {
-        UserData.map((item)=>(
-            <UserItem key={item.id} {...item} />
-        ))
-       }
+        {UserData.map((item) => (
+          <UserItem key={item.id} {...item} />
+        ))}
       </Carousel>
     </div>
   );

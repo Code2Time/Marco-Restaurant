@@ -1,6 +1,7 @@
-import Home from './pages/Home'
 import { Route, Routes } from 'react-router-dom'
 import PageNotFound from './pages/PageNotFound'
+import About from './pages/About'
+import Home from './pages/Home'
 
 function App() {
  
@@ -9,6 +10,7 @@ function App() {
      <Routes>
       <Route path='/' element={<Home />} />
       <Route path='*' element={<PageNotFound />} />
+      <Route path='/about' element={<About />} />
      </Routes>
   )
 }
