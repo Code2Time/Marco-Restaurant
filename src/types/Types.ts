@@ -28,3 +28,10 @@ export interface Iblogs {
   date : string
   img : string
 }
+
+export interface Iservices {
+  id ?: number
+  title : string
+  description : string
+  img : string
+}
