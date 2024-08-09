@@ -2,8 +2,9 @@ import { useParams } from "react-router-dom";
 import { MenuData } from "../data/MenuData";
 import orderbg from "../assets/order/order.png";
 import Footer from "../components/Footer";
-import { Slide, toast, ToastContainer } from "react-toastify";
+import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+// import { useEffect } from "react";
 
 function Order() {
   const param = useParams<{ id: any }>();
@@ -21,7 +22,12 @@ function Order() {
       draggable: true,
       progress: undefined,
       theme: "light",
+      
     });
+
+    // useEffect(()=>{
+    //   console.log(Array.from({length: 10}, () => Math.floor(Math.random() * 40)))
+    // },[])
 
   return (
     <>
