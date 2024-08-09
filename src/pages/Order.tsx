@@ -2,11 +2,12 @@ import { useParams } from "react-router-dom"
 import { MenuData } from "../data/MenuData"
 import orderbg from '../assets/order/order.png'
 import Footer from "../components/Footer"
+import toast, { Toaster } from "react-hot-toast"
 
 function Order() {
   const param = useParams<{id : any}>()
   let selected = MenuData.filter((item)=> item.id == param.id )
-  console.log(selected)
+
   return (
     <>
       <main className="order-bg w-full h-[500px] bg-red1 flex justify-around items-center">
@@ -23,7 +24,9 @@ function Order() {
               <p className="text-sm text-justify capitalize p-2 sm:text-base md:text-lg lg:w-2/3">{item.details}</p>
                 <h3 className="text-red1 text-center poppins-7 mt-4">${item.price}</h3>
                 <div className="w-2/3 mx-auto">
-                <button className=" w-full mt-4 py-2 px-3 text-sm bg-red1 outline-none uppercase poppins-5 transition-all btn text-my-white rounded-sm">add item</button>
+                <button onClick={()=>toast.success("item successfuly added")} className=" w-full mt-4 py-2 px-3 text-sm bg-red1 outline-none uppercase poppins-5 transition-all btn text-my-white rounded-sm">
+                 <Toaster position={"bottom-right"}></Toaster>
+                  add item</button>
 
                 </div>
             </div>
