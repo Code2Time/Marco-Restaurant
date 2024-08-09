@@ -1,7 +1,7 @@
-import Blog1 from '../assets/Blog/rice.jpg'
-import Blog2 from '../assets/Blog/egg.jpg'
-import Blog3 from '../assets/Blog/meet.jpg'
 import Blog4 from '../assets/Blog/bread.jpg'
+import Blog1 from '../assets/Blog/rice.jpg'
+import Blog3 from '../assets/Blog/meet.jpg'
+import Blog2 from '../assets/Blog/egg.jpg'
 
 export const BlogData =[
     {

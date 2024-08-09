@@ -55,10 +55,10 @@ function Navbar() {
                     <div className="hidden sm:ml-6 sm:block">
                       <div id="nav" className="flex space-x-4 justify-center items-center text-my-white  ">
                       <NavLink
-                          to="/gallery"
+                          to="/orders"
                           className="navlink px-3 py-2 text-sm     hover:text-red1 "
                         >
-                          Gallery
+                          Orders
                         </NavLink>
                       <NavLink
                           to="/contact"
@@ -66,12 +66,12 @@ function Navbar() {
                         >
                           Contact
                         </NavLink>
-                        <NavLink
-                          to="/menu"
+                        <a
+                          href="#menu"
                           className="navlink px-3 py-2 text-sm   hover:text-red1"
                         >
                           Menu
-                        </NavLink>
+                        </a>
                         <NavLink
                           to="/about"
                           className="navlink px-3 py-2 text-sm    hover:text-red1"
