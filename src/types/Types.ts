@@ -7,6 +7,7 @@ export interface ImenuItems {
   category: string;
   price: string;
   img: string;
+  details ?: string
 }
 
 

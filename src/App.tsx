@@ -1,9 +1,10 @@
 import { Route, Routes } from 'react-router-dom'
 import PageNotFound from './pages/PageNotFound'
 import Contact from './pages/Contact'
-import Orders from './pages/Orders'
+import Order from './pages/Order'
 import About from './pages/About'
 import Home from './pages/Home'
+
 
 function App() {
  
@@ -13,7 +14,7 @@ function App() {
       <Route path='/' element={<Home />} />
       <Route path='*' element={<PageNotFound />} />
       <Route path='/about' element={<About />} />
-      <Route path='/orders' element={<Orders />} />
+      <Route path='/orders/:id' element={<Order />} />
       <Route path='/contact' element={<Contact />} />
      </Routes>
   )

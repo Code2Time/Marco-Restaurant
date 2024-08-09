@@ -7,7 +7,7 @@ function MenuItem({ menuItems }: CategoriesProps) {
     <>
       {menuItems.map((item) => (
         <Link
-          to={`/order/${item.id}`}
+          to={`/orders/${item.id}`}
           key={item.id}
           className="menu-item-container bg-white flex justify-center items-center col-span-12 md:col-span-6 lg:col-span-4 gap-5 px-5 py-10 "
         >

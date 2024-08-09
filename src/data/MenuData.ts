@@ -9,12 +9,12 @@ import Chickenandwaffles from "../assets/Menu/Chicken and waffles.jpg";
 import Dosa from "../assets/Menu/Dosa.jpg";
 import Danishpastry from "../assets/Menu/Danish pastry.jpg";
 import Granola from "../assets/Menu/Granola.jpg";
-import Pasta from '../assets/Menu/Pasta.jpg'
-import Lomosaltado from '../assets/Menu/Lomo saltado.jpg'
-import Cabbageroll from '../assets/Menu/Cabbageroll.jpg'
-import Chickennugget from '../assets/Menu/Chicken nuggets.jpg'
-import Pudding from '../assets/Menu/pudding.jpg'
-import ChiliCheeseDogs from '../assets/Menu/Chili Cheese Dogs.jpg'
+import Pasta from "../assets/Menu/Pasta.jpg";
+import Lomosaltado from "../assets/Menu/Lomo saltado.jpg";
+import Cabbageroll from "../assets/Menu/Cabbageroll.jpg";
+import Chickennugget from "../assets/Menu/Chicken nuggets.jpg";
+import Pudding from "../assets/Menu/pudding.jpg";
+import ChiliCheeseDogs from "../assets/Menu/Chili Cheese Dogs.jpg";
 
 export const MenuData = [
   {
@@ -25,6 +25,8 @@ export const MenuData = [
     category: "breakfast",
     price: "49",
     img: Cappuccione,
+    details:
+      " Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum, esse praesentium dolores dolorum molestiae neque eaque totam eos iure. Iure mollitia dolores nemo veniam amet, minima esse accusamus nisi illo.",
   },
   {
     id: 2,
@@ -34,6 +36,8 @@ export const MenuData = [
     category: "dinner",
     price: "120",
     img: Americano,
+    details:
+      " Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum, esse praesentium dolores dolorum molestiae neque eaque totam eos iure. Iure mollitia dolores nemo veniam amet, minima esse accusamus nisi illo.",
   },
   {
     id: 3,
@@ -43,6 +47,8 @@ export const MenuData = [
     category: "Lunch",
     price: "70",
     img: Macchiato,
+    details:
+      " Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum, esse praesentium dolores dolorum molestiae neque eaque totam eos iure. Iure mollitia dolores nemo veniam amet, minima esse accusamus nisi illo.",
   },
   {
     id: 4,
@@ -52,6 +58,8 @@ export const MenuData = [
     category: "breakfast",
     price: "38",
     img: Americanpancakes,
+    details:
+      " Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum, esse praesentium dolores dolorum molestiae neque eaque totam eos iure. Iure mollitia dolores nemo veniam amet, minima esse accusamus nisi illo.",
   },
   {
     id: 5,
@@ -61,6 +69,8 @@ export const MenuData = [
     category: "Lunch",
     price: "95",
     img: TacoSoup,
+    details:
+      " Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum, esse praesentium dolores dolorum molestiae neque eaque totam eos iure. Iure mollitia dolores nemo veniam amet, minima esse accusamus nisi illo.",
   },
   {
     id: 6,
@@ -70,6 +80,8 @@ export const MenuData = [
     category: "Buffet",
     price: "60",
     img: Ristretto,
+    details:
+      " Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum, esse praesentium dolores dolorum molestiae neque eaque totam eos iure. Iure mollitia dolores nemo veniam amet, minima esse accusamus nisi illo.",
   },
   {
     id: 7,
@@ -79,6 +91,8 @@ export const MenuData = [
     category: "breakfast",
     price: "140",
     img: Bacon,
+    details:
+      " Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum, esse praesentium dolores dolorum molestiae neque eaque totam eos iure. Iure mollitia dolores nemo veniam amet, minima esse accusamus nisi illo.",
   },
   {
     id: 8,
@@ -88,6 +102,8 @@ export const MenuData = [
     category: "breakfast",
     price: "199",
     img: Chickenandwaffles,
+    details:
+      " Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum, esse praesentium dolores dolorum molestiae neque eaque totam eos iure. Iure mollitia dolores nemo veniam amet, minima esse accusamus nisi illo.",
   },
   {
     id: 9,
@@ -97,6 +113,8 @@ export const MenuData = [
     category: "breakfast",
     price: "100",
     img: Dosa,
+    details:
+      " Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum, esse praesentium dolores dolorum molestiae neque eaque totam eos iure. Iure mollitia dolores nemo veniam amet, minima esse accusamus nisi illo.",
   },
   {
     id: 10,
@@ -106,6 +124,8 @@ export const MenuData = [
     category: "breakfast",
     price: "79",
     img: Danishpastry,
+    details:
+      " Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum, esse praesentium dolores dolorum molestiae neque eaque totam eos iure. Iure mollitia dolores nemo veniam amet, minima esse accusamus nisi illo.",
   },
   {
     id: 11,
@@ -115,6 +135,8 @@ export const MenuData = [
     category: "breakfast",
     price: "50",
     img: Granola,
+    details:
+      " Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum, esse praesentium dolores dolorum molestiae neque eaque totam eos iure. Iure mollitia dolores nemo veniam amet, minima esse accusamus nisi illo.",
   },
   {
     id: 12,
@@ -124,6 +146,8 @@ export const MenuData = [
     category: "dinner",
     price: "300",
     img: Pasta,
+    details:
+      " Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum, esse praesentium dolores dolorum molestiae neque eaque totam eos iure. Iure mollitia dolores nemo veniam amet, minima esse accusamus nisi illo.",
   },
   {
     id: 13,
@@ -133,6 +157,8 @@ export const MenuData = [
     category: "dinner",
     price: "210",
     img: Lomosaltado,
+    details:
+      " Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum, esse praesentium dolores dolorum molestiae neque eaque totam eos iure. Iure mollitia dolores nemo veniam amet, minima esse accusamus nisi illo.",
   },
   {
     id: 14,
@@ -142,6 +168,8 @@ export const MenuData = [
     category: "dinner",
     price: "190",
     img: Cabbageroll,
+    details:
+      " Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum, esse praesentium dolores dolorum molestiae neque eaque totam eos iure. Iure mollitia dolores nemo veniam amet, minima esse accusamus nisi illo.",
   },
   {
     id: 15,
@@ -151,7 +179,10 @@ export const MenuData = [
     category: "dinner",
     price: "340",
     img: Chickennugget,
-  },{
+    details:
+      " Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum, esse praesentium dolores dolorum molestiae neque eaque totam eos iure. Iure mollitia dolores nemo veniam amet, minima esse accusamus nisi illo.",
+  },
+  {
     id: 16,
     title: "Pudding",
     description:
@@ -159,6 +190,8 @@ export const MenuData = [
     category: "dinner",
     price: "50",
     img: Pudding,
+    details:
+      " Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum, esse praesentium dolores dolorum molestiae neque eaque totam eos iure. Iure mollitia dolores nemo veniam amet, minima esse accusamus nisi illo.",
   },
   {
     id: 17,
@@ -168,6 +201,8 @@ export const MenuData = [
     category: "Lunch",
     price: "95",
     img: ChiliCheeseDogs,
+    details:
+      " Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum, esse praesentium dolores dolorum molestiae neque eaque totam eos iure. Iure mollitia dolores nemo veniam amet, minima esse accusamus nisi illo.",
   },
   {
     id: 18,
@@ -177,5 +212,7 @@ export const MenuData = [
     category: "Buffet",
     price: "70",
     img: Macchiato,
+    details:
+      " Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum, esse praesentium dolores dolorum molestiae neque eaque totam eos iure. Iure mollitia dolores nemo veniam amet, minima esse accusamus nisi illo.",
   },
 ];
