@@ -1,5 +1,7 @@
 // set rypes for menu items
 
+import React from "react";
+
 export interface ImenuItems {
   id: number;
   title: string;
@@ -29,10 +31,24 @@ export interface Iblogs {
   date : string
   img : string
 }
+ 
+// Context asset
 
 export interface Iservices {
   id ?: number
   title : string
   description : string
   img : string
+}
+
+export interface IOrderContextProvider{
+  children : React.ReactNode
+}
+
+export interface Iorders {
+  id : number
+  qty : number
+}
+export interface IOrderContext {
+  orders : Iorders[]
 }

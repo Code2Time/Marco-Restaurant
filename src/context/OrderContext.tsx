@@ -1,8 +1,30 @@
-import { createContext } from "react";
+import { createContext, useContext, useState } from "react";
+import { IOrderContext, IOrderContextProvider, Iorders } from "../types/Types";
 
-interface test {
-    name : string
+// Create Our Context
+const OrderContext = createContext({} as IOrderContext)
+
+
+// Create UseOrdersContext For Easy Use
+export  const UseOrdersContext = () => {
+    return useContext(OrderContext)
 }
 
-const OrderContext = createContext({} as test)
 
+
+
+
+
+
+
+// Create Layout For Use Context
+export const OrderContextProvider = ({children}: IOrderContextProvider) => {
+ 
+const [orders , setOrders] = useState<Iorders[]>([])
+
+
+
+    return <OrderContext.Provider value={{orders}} >
+        {children}
+    </OrderContext.Provider>
+}
