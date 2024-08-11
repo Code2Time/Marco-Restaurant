@@ -57,7 +57,7 @@ function Order() {
               <h3 className="text-red1 text-center poppins-7 mt-4">
                 ${item.price}
               </h3>
-              <div className="w-2/3 mx-auto">
+              <div className="w-2/3">
                 <button
                   onClick={() => {
                     notify();
