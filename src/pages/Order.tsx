@@ -6,15 +6,13 @@ import { MenuData } from "../data/MenuData";
 import Footer from "../components/Footer";
 import { UseOrdersContext } from "../context/OrderContext";
 import { GiClick } from "react-icons/gi";
-
-
-
+import Navbar from "../components/Navbar";
 
 function Order() {
   const param = useParams<{ id: any }>().id;
   let selected = MenuData.filter((item) => item.id == param);
 
-const {HandleIncreasOrder , AllOrders} = UseOrdersContext()
+  const { HandleIncreasOrder, AllOrders } = UseOrdersContext();
 
   /* notify message */
   const notify = () =>
@@ -31,16 +29,21 @@ const {HandleIncreasOrder , AllOrders} = UseOrdersContext()
 
   return (
     <>
-      <main className="order-bg w-full h-[500px] bg-red1 flex justify-around items-center">
-        <h1 className="poppins-4 uppercase text-my-white border-b-2 sm:text-xl md:text-4xl ">
-          you can get food now!
-        </h1>
-        <img
-          src={orderbg}
-          alt="order-bg"
-          className="size-48 sm:size-72 md:size-96"
-        />
-      </main>
+      <section className="order-bg w-full h-auto bg-red1">
+        <div className=" flex flex-col justify-around items-center">
+          <Navbar />
+          <div className=" flex justify-around items-center">
+            <h1 className="poppins-4 uppercase text-my-white border-b-2 sm:text-xl md:text-4xl ">
+              you can get food now!
+            </h1>
+            <img
+              src={orderbg}
+              alt="order-bg"
+              className="size-48 sm:size-72 md:size-96"
+            />
+          </div>
+        </div>
+      </section>
       <section>
         {selected.map((item) => (
           <div
@@ -64,7 +67,7 @@ const {HandleIncreasOrder , AllOrders} = UseOrdersContext()
               <div className="w-2/3">
                 <button
                   onClick={() => {
-                    notify() , HandleIncreasOrder(parseInt(param));
+                    notify(), HandleIncreasOrder(parseInt(param));
                   }}
                   className=" w-full mt-4 py-2 px-3 text-sm bg-red1 outline-none uppercase poppins-5 transition-all btn text-my-white rounded-sm"
                 >
@@ -93,12 +96,24 @@ const {HandleIncreasOrder , AllOrders} = UseOrdersContext()
             </div>
           </div>
         ))}
-        <div className={AllOrders == 0? '' : 'w-6/12 h-auto mx-auto transition-all  rounded-md overflow-hidden   '}>
-          {AllOrders == 0? (''):
-          <Link to='/'className="w-full h-full flex flex-col sm:flex-row text-center items-center justify-center gap-1 poppins-7 capitalize text-my-white bg-gray1 border  py-2 " >
-            <h1>Click to see the items</h1>
-            <GiClick />
-          </Link>}
+        <div
+          className={
+            AllOrders == 0
+              ? ""
+              : "w-3/12 h-auto mx-auto transition-all  rounded-md overflow-hidden absolute right-0   "
+          }
+        >
+          {AllOrders == 0 ? (
+            ""
+          ) : (
+            <Link
+              to="/"
+              className="w-full h-full flex flex-col sm:flex-row text-center items-center justify-center gap-1 poppins-7 capitalize text-my-white bg-gray1 border  py-2 "
+            >
+              <h1>see orders</h1>
+              <GiClick />
+            </Link>
+          )}
         </div>
       </section>
       <Footer />
