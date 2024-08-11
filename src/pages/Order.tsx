@@ -26,7 +26,7 @@ function Order() {
       
     });
 
-    const {HandleIncreasOrder , orders} = UseOrdersContext()
+    const {HandleIncreasOrder , orders , HandleDecreasOrder} = UseOrdersContext()
 
     console.log(orders)
 
@@ -68,6 +68,12 @@ function Order() {
                   className=" w-full mt-4 py-2 px-3 text-sm bg-red1 outline-none uppercase poppins-5 transition-all btn text-my-white rounded-sm"
                 >
                   add item
+                </button>
+                <button
+                  onClick={() => {notify() , HandleDecreasOrder(parseInt(param.id))}}
+                  className=" w-full mt-4 py-2 px-3 text-sm bg-red1 outline-none uppercase poppins-5 transition-all btn text-my-white rounded-sm"
+                >
+                  قث item
                 </button>
                 <ToastContainer
                         position="top-center"

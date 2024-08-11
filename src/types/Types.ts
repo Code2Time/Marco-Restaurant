@@ -51,5 +51,6 @@ export interface Iorders {
 }
 export interface IOrderContext {
   orders : Iorders[],
-  HandleIncreasOrder : (id : number) => void
+  HandleIncreasOrder : (id : number) => void,
+  HandleDecreasOrder : (id : number) => void
 }
