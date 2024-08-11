@@ -11,6 +11,8 @@ export const UseOrdersContext = () => {
 
 // Create Layout For Use Context
 export const OrderContextProvider = ({ children }: IOrderContextProvider) => {
+
+  // Our Cart
   const [orders, setOrders] = useState<Iorders[]>([]);
 
   const HandleIncreasOrder = (id: number) => {
@@ -58,9 +60,11 @@ export const OrderContextProvider = ({ children }: IOrderContextProvider) => {
    })
  }
 
+ const AllOrders = orders.reduce((total , item)=> total + item.qty ,0)
+
   return (
     <OrderContext.Provider
-      value={{ orders, HandleIncreasOrder, HandleDecreasOrder , Orderqty , HandleRemoveOrder}}
+      value={{ orders, HandleIncreasOrder, HandleDecreasOrder , Orderqty , HandleRemoveOrder ,AllOrders}}
     >
       {children}
     </OrderContext.Provider>

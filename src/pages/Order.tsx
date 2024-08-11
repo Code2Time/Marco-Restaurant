@@ -1,9 +1,11 @@
 import { toast, ToastContainer } from "react-toastify";
 import orderbg from "../assets/order/order.png";
 import "react-toastify/dist/ReactToastify.css";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { MenuData } from "../data/MenuData";
 import Footer from "../components/Footer";
+import { UseOrdersContext } from "../context/OrderContext";
+import { GiClick } from "react-icons/gi";
 
 
 
@@ -11,6 +13,8 @@ import Footer from "../components/Footer";
 function Order() {
   const param = useParams<{ id: any }>().id;
   let selected = MenuData.filter((item) => item.id == param);
+
+const {HandleIncreasOrder , AllOrders} = UseOrdersContext()
 
   /* notify message */
   const notify = () =>
@@ -60,7 +64,7 @@ function Order() {
               <div className="w-2/3">
                 <button
                   onClick={() => {
-                    notify();
+                    notify() , HandleIncreasOrder(parseInt(param));
                   }}
                   className=" w-full mt-4 py-2 px-3 text-sm bg-red1 outline-none uppercase poppins-5 transition-all btn text-my-white rounded-sm"
                 >
@@ -89,6 +93,13 @@ function Order() {
             </div>
           </div>
         ))}
+        <div className={AllOrders == 0? '' : 'w-6/12 h-auto mx-auto transition-all  rounded-md overflow-hidden   '}>
+          {AllOrders == 0? (''):
+          <Link to='/'className="w-full h-full flex flex-col sm:flex-row text-center items-center justify-center gap-1 poppins-7 capitalize text-my-white bg-gray1 border  py-2 " >
+            <h1>Click to see the items</h1>
+            <GiClick />
+          </Link>}
+        </div>
       </section>
       <Footer />
     </>

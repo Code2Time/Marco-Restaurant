@@ -54,5 +54,6 @@ export interface IOrderContext {
   HandleIncreasOrder : (id : number) => void,
   HandleDecreasOrder : (id : number) => void,
   Orderqty : (id : number) => number,
-  HandleRemoveOrder : (id : number) => void
+  HandleRemoveOrder : (id : number) => void,
+  AllOrders : number
 }
