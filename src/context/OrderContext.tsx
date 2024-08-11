@@ -52,9 +52,15 @@ export const OrderContextProvider = ({ children }: IOrderContextProvider) => {
  }
 
 
+ const HandleRemoveOrder = (id : number) =>{
+   setOrders(currentItems => {
+    return currentItems.filter(item => item.id !== id)
+   })
+ }
+
   return (
     <OrderContext.Provider
-      value={{ orders, HandleIncreasOrder, HandleDecreasOrder , Orderqty}}
+      value={{ orders, HandleIncreasOrder, HandleDecreasOrder , Orderqty , HandleRemoveOrder}}
     >
       {children}
     </OrderContext.Provider>

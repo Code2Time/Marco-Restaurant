@@ -51,7 +51,8 @@ export interface Iorders {
 }
 export interface IOrderContext {
   orders ?: Iorders[],
-  HandleIncreasOrder ?: (id : number) => void,
-  HandleDecreasOrder ?: (id : number) => void,
-  Orderqty ?: (id : number) => number
+  HandleIncreasOrder : (id : number) => void,
+  HandleDecreasOrder : (id : number) => void,
+  Orderqty : (id : number) => number,
+  HandleRemoveOrder : (id : number) => void
 }
