@@ -47,9 +47,14 @@ export const OrderContextProvider = ({ children }: IOrderContextProvider) => {
     });
   };
 
+ const Orderqty = (id : number) =>{
+   return orders.find(item => item.id == id )?.qty || 0
+ }
+
+
   return (
     <OrderContext.Provider
-      value={{ orders, HandleIncreasOrder, HandleDecreasOrder }}
+      value={{ orders, HandleIncreasOrder, HandleDecreasOrder , Orderqty}}
     >
       {children}
     </OrderContext.Provider>

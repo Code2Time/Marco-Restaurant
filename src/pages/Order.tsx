@@ -1,34 +1,29 @@
+import { toast, ToastContainer } from "react-toastify";
+import orderbg from "../assets/order/order.png";
+import "react-toastify/dist/ReactToastify.css";
 import { useParams } from "react-router-dom";
 import { MenuData } from "../data/MenuData";
-import orderbg from "../assets/order/order.png";
 import Footer from "../components/Footer";
-import { toast, ToastContainer } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
-import { UseOrdersContext } from "../context/OrderContext";
-// import { useEffect } from "react";
+
+
+
 
 function Order() {
-  const param = useParams<{ id: any }>();
-  let selected = MenuData.filter((item) => item.id == param.id);
+  const param = useParams<{ id: any }>().id;
+  let selected = MenuData.filter((item) => item.id == param);
 
-
- /* notify message */
+  /* notify message */
   const notify = () =>
     toast.success("Successfully added  ", {
       position: "top-center",
-      autoClose: 1000,
+      autoClose: 600,
       hideProgressBar: true,
       closeOnClick: true,
       pauseOnHover: true,
       draggable: true,
       progress: undefined,
       theme: "light",
-      
     });
-
-    const {HandleIncreasOrder , orders , HandleDecreasOrder} = UseOrdersContext()
-
-    console.log(orders)
 
   return (
     <>
@@ -64,29 +59,25 @@ function Order() {
               </h3>
               <div className="w-2/3 mx-auto">
                 <button
-                  onClick={() => {notify() , HandleIncreasOrder(parseInt(param.id))}}
+                  onClick={() => {
+                    notify();
+                  }}
                   className=" w-full mt-4 py-2 px-3 text-sm bg-red1 outline-none uppercase poppins-5 transition-all btn text-my-white rounded-sm"
                 >
                   add item
                 </button>
-                <button
-                  onClick={() => {notify() , HandleDecreasOrder(parseInt(param.id))}}
-                  className=" w-full mt-4 py-2 px-3 text-sm bg-red1 outline-none uppercase poppins-5 transition-all btn text-my-white rounded-sm"
-                >
-                  قث item
-                </button>
                 <ToastContainer
-                        position="top-center"
-                        autoClose={1000}
-                        hideProgressBar
-                        newestOnTop={false}
-                        closeOnClick={false}
-                        rtl={false}
-                        pauseOnFocusLoss
-                        draggable
-                        pauseOnHover
-                        theme="light"
-                      />
+                  position="top-center"
+                  autoClose={1000}
+                  hideProgressBar
+                  newestOnTop={false}
+                  closeOnClick={false}
+                  rtl={false}
+                  pauseOnFocusLoss
+                  draggable
+                  pauseOnHover
+                  theme="light"
+                />
               </div>
             </div>
             <div className="food-img col-span-12 sm:col-span-5 md:col-span-4 my-10">
