@@ -4,6 +4,7 @@ import orderbg from "../assets/order/order.png";
 import Footer from "../components/Footer";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { UseOrdersContext } from "../context/OrderContext";
 // import { useEffect } from "react";
 
 function Order() {
@@ -25,15 +26,15 @@ function Order() {
       
     });
 
-    // useEffect(()=>{
-    //   console.log(Array.from({length: 10}, () => Math.floor(Math.random() * 40)))
-    // },[])
+    const {HandleIncreasOrder , orders} = UseOrdersContext()
+
+    console.log(orders)
 
   return (
     <>
       <main className="order-bg w-full h-[500px] bg-red1 flex justify-around items-center">
         <h1 className="poppins-4 uppercase text-my-white border-b-2 sm:text-xl md:text-4xl ">
-          you can order now!
+          you can get food now!
         </h1>
         <img
           src={orderbg}
@@ -63,7 +64,7 @@ function Order() {
               </h3>
               <div className="w-2/3 mx-auto">
                 <button
-                  onClick={() => {notify()}}
+                  onClick={() => {notify() , HandleIncreasOrder(parseInt(param.id))}}
                   className=" w-full mt-4 py-2 px-3 text-sm bg-red1 outline-none uppercase poppins-5 transition-all btn text-my-white rounded-sm"
                 >
                   add item

@@ -50,5 +50,6 @@ export interface Iorders {
   qty : number
 }
 export interface IOrderContext {
-  orders : Iorders[]
+  orders : Iorders[],
+  HandleIncreasOrder : (id : number) => void
 }

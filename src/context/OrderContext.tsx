@@ -20,11 +20,32 @@ export  const UseOrdersContext = () => {
 // Create Layout For Use Context
 export const OrderContextProvider = ({children}: IOrderContextProvider) => {
  
-const [orders , setOrders] = useState<Iorders[]>([])
+const [orders , setOrders] = useState<Iorders[]>([]);
+
+
+const HandleIncreasOrder = (id : number) =>{
+    setOrders((currentOrders)=> {
+        let selected = currentOrders.find((item)=> item.id == id);
+        if(selected == null){
+            return [...currentOrders , {id : id , qty : 1}]
+        }
+        else{
+            return currentOrders.map((item)=>{
+                if(item.id == id){
+                    return{...item , qty : item.qty + 1}
+                }
+                else{
+                    return item
+                }
+            }) 
+        }
+
+    })
+}
 
 
 
-    return <OrderContext.Provider value={{orders}} >
+    return <OrderContext.Provider value={{orders , HandleIncreasOrder}} >
         {children}
     </OrderContext.Provider>
 }
