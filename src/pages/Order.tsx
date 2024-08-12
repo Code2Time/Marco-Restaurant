@@ -1,11 +1,11 @@
+import { UseOrdersContext } from "../context/OrderContext";
 import { toast, ToastContainer } from "react-toastify";
-import orderbg from "../assets/order/order.png";
-import "react-toastify/dist/ReactToastify.css";
 import { Link, useParams } from "react-router-dom";
+import orderbg from "../assets/order/order.png";
+import logo from "../assets/logo/logo.png.webp";
+import "react-toastify/dist/ReactToastify.css";
 import { MenuData } from "../data/MenuData";
 import Footer from "../components/Footer";
-import { UseOrdersContext } from "../context/OrderContext";
-import { GiClick } from "react-icons/gi";
 import Navbar from "../components/Navbar";
 
 function Order() {
@@ -31,6 +31,13 @@ function Order() {
     <>
       <section className="order-bg w-full h-auto bg-red1">
         <div className=" flex flex-col justify-around items-center">
+          <div className="marco-icon w-full h-auto absolute top-4">
+            <img
+              className="w-24 mx-auto cursor-pointer"
+              src={logo}
+              alt="marco-logo"
+            />
+          </div>
           <Navbar />
           <div className=" flex justify-around items-center">
             <h1 className="poppins-4 uppercase text-my-white border-b-2 sm:text-xl md:text-4xl ">
@@ -61,7 +68,7 @@ function Order() {
               <p className="text-sm text-justify capitalize p-2 sm:text-base md:text-lg lg:w-2/3">
                 {item.details}
               </p>
-              <h3 className="text-red1 text-center poppins-7 mt-4">
+              <h3 className="text-red1 poppins-7 mt-4">
                 ${item.price}
               </h3>
               <div className="w-2/3">
@@ -96,25 +103,6 @@ function Order() {
             </div>
           </div>
         ))}
-        <div
-          className={
-            AllOrders == 0
-              ? ""
-              : "w-3/12 h-auto mx-auto transition-all  rounded-md overflow-hidden absolute right-0   "
-          }
-        >
-          {AllOrders == 0 ? (
-            ""
-          ) : (
-            <Link
-              to="/"
-              className="w-full h-full flex flex-col sm:flex-row text-center items-center justify-center gap-1 poppins-7 capitalize text-my-white bg-gray1 border  py-2 "
-            >
-              <h1>see orders</h1>
-              <GiClick />
-            </Link>
-          )}
-        </div>
       </section>
       <Footer />
     </>

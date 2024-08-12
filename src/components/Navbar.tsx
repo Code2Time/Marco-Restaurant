@@ -56,7 +56,7 @@ function Navbar() {
                       <div id="nav" className="flex space-x-4 justify-center items-center text-my-white  ">
                       <NavLink
                           to="/orders"
-                          className="navlink px-3 py-2 text-sm     hover:text-red1 "
+                          className="navlink px-3 py-2 text-sm  hover:text-red1 "
                         >
                           Orders
                         </NavLink>
