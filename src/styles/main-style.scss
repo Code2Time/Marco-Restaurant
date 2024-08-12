@@ -1,6 +1,8 @@
 /* import fonts  */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+
 .open-sans {
   font-family: "Open Sans", sans-serif;
   font-optical-sizing: auto;
@@ -48,7 +50,6 @@
   font-weight: 700;
   font-style: normal;
 }
-
 body {
   #nav {
     transition: all 0.3s;
@@ -140,6 +141,8 @@ body {
     border: 1px solid red;
   }
 
+  // Loading
+
 .loader {
   position: absolute;
   inset: 0;
@@ -172,5 +175,39 @@ body {
 @keyframes l16 { 
   100%{transform: rotate(1turn)}
 }
+
+.page_404{ padding:40px 0; background:#fff; font-family: 'poppins', serif;
+  width: 100%;
+  height: 100%;
+}
+
+.page_404  img{ width:100%;}
+
+.four_zero_four_bg{
+ 
+ background-image: url('https://cdn.dribbble.com/users/285475/screenshots/2083086/dribbble_1.gif');
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+ }
+ 
+ 
+ .four_zero_four_bg h1{
+ font-size:80px;
+ }
+ 
+  .four_zero_four_bg h3{
+			 font-size:80px;
+			 }
+			 
+			 .link_404{			 
+	color: #fff!important;
+    padding: 10px 20px;
+    background: #ff1500a4;
+    margin: 20px 0;
+    display: inline-block;}
+	.contant_box_404{ margin-top:-50px;}
  
 }
