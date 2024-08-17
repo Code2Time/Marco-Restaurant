@@ -1,6 +1,6 @@
 import { UseOrdersContext } from "../context/OrderContext";
 import { toast, ToastContainer } from "react-toastify";
-import { Link, useParams } from "react-router-dom";
+import { useLocation, useParams } from "react-router-dom";
 import orderbg from "../assets/order/order.png";
 import logo from "../assets/logo/logo.png.webp";
 import "react-toastify/dist/ReactToastify.css";
@@ -26,6 +26,9 @@ function Order() {
       progress: undefined,
       theme: "light",
     });
+
+    const {pathname} = useLocation()
+    console.log(pathname)
 
   return (
     <>

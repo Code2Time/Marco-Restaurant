@@ -59,6 +59,16 @@ body {
       font-size: 12px;
       font-weight: 550;
     }
+    .link-qty::after{
+    content: "";
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: blue;
+    }
   }
 
   .header-container {
