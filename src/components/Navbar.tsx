@@ -1,7 +1,7 @@
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { Fragment, useState } from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 
 function Navbar() {
@@ -66,12 +66,12 @@ function Navbar() {
                         >
                           Contact
                         </NavLink>
-                        <a
-                          href="#menu"
+                        <Link to='/#menu'
+                        
                           className="navlink px-3 py-2 text-sm   hover:text-red1"
                         >
                           Menu
-                        </a>
+                        </Link>
                         <NavLink
                           to="/about"
                           className="navlink px-3 py-2 text-sm    hover:text-red1"
