@@ -19,7 +19,7 @@ function Orders() {
   
   <div>
     <header>
-     <div className="orders-header w-full h-auto">
+     <div className="orders-header w-full h-52 sm:h-96">
       <img src={headerLogo} alt="headerlogo" className="size-full" />
       <h1 className="orders-title text-center poppins-7 uppercase text-2xl sm:text-4xl lg:text-5xl p-2">your orders</h1>
      </div>
