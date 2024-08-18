@@ -2,13 +2,10 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { Link, NavLink, useLocation, useParams } from "react-router-dom";
 import { Fragment, useState } from "react";
-import { UseOrdersContext } from "../context/OrderContext";
 
 
 function Navbar() {
-  // change style with OrderContext
 
-  const {AllOrders} = UseOrdersContext()
 
   // change style when scrolling
 
@@ -65,7 +62,7 @@ function Navbar() {
                       <div id="nav" className="flex space-x-4 justify-center items-center text-my-white relative  ">
                       <NavLink
                           to="/orders"
-                          className={AllOrders == 0 || pathname == `/order/${param}` ? "navlink px-3 py-2 text-sm  hover:text-blue-500 link-qty " : "navlink px-3 py-2 text-sm  hover:text-red1 "}
+                          className={pathname == `/order/${param}` ? "navlink px-3 py-2 text-sm   hover:text-blue-500 " : "navlink px-3 py-2 text-sm   hover:text-red1 "}
                         >
                           Orders
                         </NavLink>
