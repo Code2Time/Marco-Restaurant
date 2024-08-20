@@ -1,5 +1,6 @@
 import { createContext, useContext, useState } from "react";
 import { IOrderContext, IOrderContextProvider, Iorders } from "../types/Types";
+import { useLocaStage } from "./LocalStorage";
 
 // Create Our Context
 const OrderContext = createContext({} as IOrderContext);
@@ -13,7 +14,7 @@ export const UseOrdersContext = () => {
 export const OrderContextProvider = ({ children }: IOrderContextProvider) => {
 
   // Our Cart
-  const [orders, setOrders] = useState<Iorders[]>([]);
+  const [orders, setOrders] = useLocaStage<Iorders[]>('order',[]);
 
   const HandleIncreasOrder = (id: number) => {
     setOrders((currentOrders) => {
