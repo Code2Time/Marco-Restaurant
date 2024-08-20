@@ -4,13 +4,13 @@ import { MdRestaurantMenu } from "react-icons/md";
 import CartItem from "../components/CartItem";
 import { useEffect, useState } from "react";
 import Loading from "../components/Loading";
-import { MenuData } from "../data/MenuData";
 import { Link } from "react-router-dom";
 
 
 function Orders() {
 
-  // set Loading 
+// set Loading 
+
   const [isLoading, setIsLoading] = useState<boolean>(true);
   useEffect(() => {
     setTimeout(() => {
