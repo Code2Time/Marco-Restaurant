@@ -1,6 +1,6 @@
 // set rypes for menu items
 
-import React from "react";
+
 
 export interface ImenuItems {
   id: number;
