@@ -45,6 +45,7 @@ const {AllOrders , orders} = UseOrdersContext()
             )) : ''}
             </div>
           </section>
+          {AllOrders == 0 ? "" : <div className="mx-auto w-10/12 h-auto border flex mt-10 md:w-6/12 md:mt-20"><Link to='/404' className="capitalize text-my-white bg-red1 rounded py-3 w-full text-center">order now</Link></div>}
         </div>
       }
     </>

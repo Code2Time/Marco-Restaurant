@@ -66,7 +66,7 @@ function CartItem({ id, qty }: Iorders) {
         </div>
       </div>
       <div className="col-span-12  flex justify-between mt-4 sm:flex-col items-center  gap-28 ">
-        <h1 className="poppins-7">${SelectedOrders?.price}</h1>
+        <h1 className="poppins-7 text-red1">${SelectedOrders?.price}</h1>
         <p className="text-xs poppins-7">subtotal:${subtotal * qty}</p>
       </div>
     </div>
