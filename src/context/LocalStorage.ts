@@ -8,8 +8,6 @@ export function useLocaStage<T>(key: string, initialvalue: T) {
       return initialvalue;
     }
   });
-
-
 useEffect(()=>{
 localStorage.setItem(key , JSON.stringify(value))
 },[value , setValue])
