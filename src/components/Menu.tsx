@@ -15,10 +15,9 @@ function Menu() {
   const [menuItems, setMenuItems] = useState<ImenuItems[]>(MenuData);
 
   //save categories for button categories
-  const [categories, setCategories] =
-    useState<typeof Allcategories>(Allcategories);
-
-  // set activecategory for menu style
+  const [categories, setCategories] = useState<typeof Allcategories>(Allcategories);
+  console.log(setCategories);
+   // set activecategory for menu style
   const [activecategory, setActiveCategory] = useState<string>("all");
 
   // function for handle Menu

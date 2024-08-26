@@ -12,7 +12,7 @@ function Order() {
   const param = useParams<{ id: any }>().id;
   let selected = MenuData.filter((item) => item.id == param);
 
-  const { HandleIncreasOrder, AllOrders } = UseOrdersContext();
+  const { HandleIncreasOrder} = UseOrdersContext();
 
   /* notify message */
   const notify = () =>
