@@ -117,19 +117,40 @@ function Navbar() {
               </div>
 
               <Disclosure.Panel className="sm:hidden">
-                <div className="space-y-1 px-2 pb-3 pt-2">
-                  <NavLink
-                    to="/"
-                    className="text-gray-300  hover:text-white block rounded-md px-3 py-2 text-base font-medium text-center Yekan"
-                  >
-                    Home
-                  </NavLink>
-                  <NavLink
-                    to="/shop"
-                    className="text-gray-300 hover:bg-transparent !block  text-center   hover:text-white  rounded-md px-3 py-2 text-sm font-medium Lamia"
-                  >
-                    Menu
-                  </NavLink>
+                <div className="space-y-1 px-2 pb-3 pt-2 flex flex-col text-center">
+                <NavLink
+                          to="/orders"
+                          className={pathname == `/order/${param}` ? "navlink px-3 py-2 text-sm   hover:text-blue-500 " : "navlink px-3 py-2 text-sm   hover:text-red1 "}
+                        >
+                          Orders
+                        </NavLink>
+                      <NavLink
+                          to="/contact"
+                          className={pathname == `/order/${param}` ? "navlink px-3 py-2 text-sm   hover:text-blue-500 " : "navlink px-3 py-2 text-sm   hover:text-red1 "}
+                        >
+                          Contact
+                        </NavLink>
+                        <Link to='/#menu'
+                        
+                        className={pathname == `/order/${param}` ? "navlink px-3 py-2 text-sm   hover:text-blue-500 " : "navlink px-3 py-2 text-sm   hover:text-red1 "}
+
+                        >
+                          Menu
+                        </Link>
+                        <NavLink
+                          to="/about"
+                          className={pathname == `/order/${param}` ? "navlink px-3 py-2 text-sm   hover:text-blue-500 " : "navlink px-3 py-2 text-sm   hover:text-red1 "}
+
+                        >
+                          About
+                        </NavLink>
+                        <NavLink
+                          to="/"
+                          className={pathname == `/order/${param}` ? "navlink px-3 py-2 text-sm   hover:text-blue-500 " : "navlink px-3 py-2 text-sm   hover:text-red1 "}
+
+                        >
+                          Home
+                        </NavLink>
                 </div>
               </Disclosure.Panel>
             </div>
